@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pranav Salunkhe | Developer Portfolio</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="antialiased">
+
+    <!-- Header & Navigation -->
+    <header id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="text-2xl font-bold accent-color">PS</a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#" class="btn-primary !px-4 !py-2">Resume</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden focus:outline-none text-slate-200" aria-label="Open mobile menu">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-opacity-90 card-bg">
+            <a href="#about" class="block py-3 px-6 text-sm hover:accent-color transition-colors">About</a>
+            <a href="#skills" class="block py-3 px-6 text-sm hover:accent-color transition-colors">Skills</a>
+            <a href="#projects" class="block py-3 px-6 text-sm hover:accent-color transition-colors">Projects</a>
+            <a href="#contact" class="block py-3 px-6 text-sm hover:accent-color transition-colors">Contact</a>
+            <a href="#" class="block py-2 px-4 text-sm btn-primary m-4 text-center">Resume</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 md:px-12 lg:px-24">
+        <!-- Home/Hero Section -->
+        <section id="home" class="min-h-screen flex items-center justify-center">
+            <div class="text-left max-w-4xl">
+                <p class="text-lg accent-color mb-4 animate-fade-in-up delay-100">Hi, my name is</p>
+                <h1 class="text-4xl md:text-7xl font-bold text-slate-200 mb-4 animate-fade-in-up delay-200">Pranav Salunkhe.</h1>
+                <h2 class="text-4xl md:text-6xl font-bold text-slate-400 mb-8 animate-fade-in-up delay-300">I build things for the web.</h2>
+                <p class="text-slate-400 max-w-xl mb-12 animate-fade-in-up animation-delay-400">
+                    I'm a full-stack developer specializing in creating exceptional digital experiences. Currently, I'm focused on building accessible, human-centered products and pushing the boundaries of web technology.
+                </p>
+                <a href="#contact" class="btn-primary animate-fade-in-up animation-delay-500">Get In Touch</a>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="py-20 md:py-32">
+            <h2 class="section-heading"><span class="accent-color">01.</span> About Me</h2>
+            <div class="grid md:grid-cols-5 gap-10">
+                <div class="md:col-span-3 text-slate-400 space-y-4 text-lg">
+                    <p>
+                        Hello! I'm Pranav, a passionate developer with a love for creating intuitive and dynamic user interfaces. My journey into web development started back in college when I decided to build a custom website for a student club — and I've been hooked ever since.
+                    </p>
+                    <p>
+                        Fast-forward to today, I've had the privilege of working at a start-up, a huge corporation, and a digital agency. My main focus these days is building products that are not only beautiful but also performant and accessible.
+                    </p>
+                    <p>
+                        When I'm not at the computer, I'm usually exploring new hiking trails, trying out new coffee shops, or reading a good book.
+                    </p>
+                </div>
+                <div class="md:col-span-2 flex justify-center items-start">
+                    <div class="w-64 h-64 md:w-80 md:h-80 relative group">
+                        <div class="absolute inset-0 bg-gray-700 rounded-lg z-0">
+                            <img src="https://placehold.co/400x400/112240/57cbff?text=PS" alt="Pranav Salunkhe" class="w-full h-full object-cover rounded-lg filter grayscale group-hover:grayscale-0 transition-all duration-300">
+                        </div>
+                        <div class="absolute inset-0 border-2 border-current accent-color rounded-lg transform translate-x-4 translate-y-4 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-300 negative-z"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-20 md:py-32">
+            <h2 class="section-heading"><span class="accent-color">02.</span> Skills</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+                <!-- Skill Items will be dynamically generated or hardcoded -->
+                <div class="skill-card">
+                    <i data-lucide="html5" class="w-16 h-16 mx-auto mb-4 text-[#E34F26]"></i>
+                    <h3 class="font-semibold text-lg text-slate-200">HTML5</h3>
+                </div>
+                <div class="skill-card">
+                    <i data-lucide="css3" class="w-16 h-16 mx-auto mb-4 text-[#1572B6]"></i>
+                    <h3 class="font-semibold text-lg text-slate-200">CSS3</h3>
+                </div>
+                <div class="skill-card">
+                    <i data-lucide="javascript" class="w-16 h-16 mx-auto mb-4 text-[#F7DF1E]"></i>
+                    <h3 class="font-semibold text-lg text-slate-200">JavaScript</h3>
+                </div>
+                <div class="skill-card">
+                    <i data-lucide="react" class="w-16 h-16 mx-auto mb-4 text-[#61DAFB]"></i>
+                    <h3 class="font-semibold text-lg text-slate-200">React</h3>
+                </div>
+                <div class="skill-card">
+                    <i data-lucide="tailwind" class="w-16 h-16 mx-auto mb-4 text-[#38B2AC]"></i>
+                    <h3 class="font-semibold text-lg text-slate-200">Tailwind CSS</h3>
+                </div>
+                <div class="skill-card">
+                    <i data-lucide="node-js" class="w-16 h-16 mx-auto mb-4 text-[#339933]"></i>
+                    <h3 class="font-semibold text-lg text-slate-200">Node.js</h3>
+                </div>
+                <div class="skill-card">
+                    <i data-lucide="database" class="w-16 h-16 mx-auto mb-4 text-slate-300"></i>
+                    <h3 class="font-semibold text-lg text-slate-200">MongoDB</h3>
+                </div>
+                <div class="skill-card">
+                    <i data-lucide="git-branch" class="w-16 h-16 mx-auto mb-4 text-[#F05032]"></i>
+                    <h3 class="font-semibold text-lg text-slate-200">Git</h3>
+                </div>
+                <div class="skill-card">
+                    <i data-lucide="figma" class="w-16 h-16 mx-auto mb-4 text-[#F24E1E]"></i>
+                    <h3 class="font-semibold text-lg text-slate-200">Figma</h3>
+                </div>
+                 <div class="skill-card">
+                    <i data-lucide="pen-tool" class="w-16 h-16 mx-auto mb-4 text-slate-300"></i>
+                    <h3 class="font-semibold text-lg text-slate-200">UI/UX Design</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20 md:py-32">
+            <h2 class="section-heading"><span class="accent-color">03.</span> Projects I've Built</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Project Card 1 -->
+                <div class="project-card">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <i data-lucide="folder-kanban" class="w-10 h-10 accent-color"></i>
+                            <div class="space-x-4">
+                                <a href="https://github.com/onic106" class="project-link" title="View on GitHub"><i data-lucide="github" class="w-6 h-6"></i></a>
+                                <a href="https://github.com/onic106" class="project-link" title="View Project"><i data-lucide="external-link" class="w-6 h-6"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-slate-200">E-Commerce Platform</h3>
+                        <p class="text-slate-400 mb-4">A full-featured e-commerce website with product listings, a shopping cart, and a checkout process. Built with the MERN stack.</p>
+                    </div>
+                    <div class="text-sm text-slate-400 flex flex-wrap gap-x-4">
+                        <span>React</span><span>Node.js</span><span>Express</span><span>MongoDB</span>
+                    </div>
+                </div>
+                <!-- Project Card 2 -->
+                <div class="project-card">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <i data-lucide="bar-chart-3" class="w-10 h-10 accent-color"></i>
+                            <div class="space-x-4">
+                                <a href="https://github.com/onic106" class="project-link" title="View on GitHub"><i data-lucide="github" class="w-6 h-6"></i></a>
+                                <a href="https://github.com/onic106" class="project-link" title="View Project"><i data-lucide="external-link" class="w-6 h-6"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-slate-200">Data Visualization Dashboard</h3>
+                        <p class="text-slate-400 mb-4">An interactive dashboard for visualizing complex datasets using D3.js, providing insights through charts and graphs.</p>
+                    </div>
+                    <div class="text-sm text-slate-400 flex flex-wrap gap-x-4">
+                        <span>JavaScript</span><span>D3.js</span><span>HTML5</span><span>CSS3</span>
+                    </div>
+                </div>
+                <!-- Project Card 3 -->
+                <div class="project-card">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <i data-lucide="message-square-more" class="w-10 h-10 accent-color"></i>
+                            <div class="space-x-4">
+                                <a href="https://github.com/onic106" class="project-link" title="View on GitHub"><i data-lucide="github" class="w-6 h-6"></i></a>
+                                <a href="https://github.com/onic106" class="project-link" title="View Project"><i data-lucide="external-link" class="w-6 h-6"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-slate-200">Real-Time Chat App</h3>
+                        <p class="text-slate-400 mb-4">A web-based chat application using WebSockets for instant messaging between multiple users in different chat rooms.</p>
+                    </div>
+                    <div class="text-sm text-slate-400 flex flex-wrap gap-x-4">
+                        <span>Node.js</span><span>Socket.IO</span><span>React</span><span>Tailwind CSS</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 md:py-32 text-center">
+            <h2 class="text-lg accent-color font-mono">04. What's Next?</h2>
+            <h3 class="text-4xl md:text-5xl font-bold text-slate-200 mt-2 mb-4">Get In Touch</h3>
+            <p class="text-slate-400 max-w-xl mx-auto mb-8">
+                I'm currently open to new opportunities and my inbox is always open. Whether you have a question or just want to say hi, I'll do my best to get back to you!
+            </p>
+            
+            <form id="contact-form" class="max-w-xl mx-auto space-y-4" novalidate>
+                <div>
+                    <input type="text" id="name" name="name" placeholder="Your Name" class="form-input" required>
+                    <small class="form-error" aria-live="polite">Please enter your name.</small>
+                </div>
+                <div>
+                    <input type="email" id="email" name="email" placeholder="Your Email" class="form-input" required>
+                    <small class="form-error" aria-live="polite">Please enter a valid email address.</small>
+                </div>
+                <div>
+                    <textarea id="message" name="message" placeholder="Your Message" rows="5" class="form-input" required></textarea>
+                    <small class="form-error" aria-live="polite">Please enter your message.</small>
+                </div>
+
+                <button type="submit" class="btn-primary w-full md:w-auto">Send Message</button>
+            </form>
+            <div id="form-success" class="text-green-400 mt-4 hidden" aria-live="polite">Thank you for your message! I'll get back to you soon.</div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-6 text-slate-400 text-sm">
+        <div class="flex justify-center space-x-6 mb-4">
+            <a href="https://github.com/onic106" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub"><i data-lucide="github" class="w-6 h-6"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn"><i data-lucide="linkedin" class="w-6 h-6"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-link" title="Twitter"><i data-lucide="twitter" class="w-6 h-6"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link" title="Instagram"><i data-lucide="instagram" class="w-6 h-6"></i></a>
+        </div>
+        <p>Designed &amp; Built by John Doe</p>
+    </footer>
+
+    <!-- ScrollReveal.js for animations -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="script.js" defer></script>
+</body>
+</html>
+
