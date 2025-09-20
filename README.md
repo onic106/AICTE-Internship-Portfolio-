@@ -27,11 +27,11 @@ This project allows developers to showcase their **skills, projects, and achieve
 
 ## 📂 Project Structure
 📁 Interactive-Digital-Portfolio
-│── 📄 index.html # Main HTML file
-│── 📄 style.css # CSS file
-│── 📄 script.js # JavaScript file
-│── 📁 assets/ # Images, icons, and other assets
-│── 📄 README.md # Project documentation
+ │── 📄 index.html # Main HTML file
+ │── 📄 style.css # CSS file
+ │── 📄 script.js # JavaScript file
+ │── 📁 assets/ # Images, icons, and other assets
+ │── 📄 README.md # Project documentation
 
 
 ---
