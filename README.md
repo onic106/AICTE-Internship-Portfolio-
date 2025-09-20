@@ -21,7 +21,7 @@ This project allows developers to showcase their **skills, projects, and achieve
 - **HTML5** – Structure
 - **CSS3** – Styling & Responsiveness
 - **JavaScript (ES6)** – Interactivity
-- *(Optional)* **GSAP & ScrollMagic** – Advanced animations
+- 
 
 ---
 
