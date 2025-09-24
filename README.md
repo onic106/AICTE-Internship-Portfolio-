@@ -39,7 +39,7 @@ This project allows developers to showcase their **skills, projects, and achieve
 ## 🎯 How to Use
 1. Clone this repository:
    ```bash
-   git clone https://github.com/<your-username>/Interactive-Digital-Portfolio.git
+   git clone https://github.com/onic106/Interactive-Digital-Portfolio.git
 
 cd Interactive-Digital-Portfolio
 Open index.html in your browser.
